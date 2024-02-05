@@ -1,0 +1,74 @@
+@font-face {
+    font-family: mario;
+    src: url(text/MarioWorldPixelColor-3zBwX.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/pagemario.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: aquamarine;
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px){
+
+    body {
+        background-image: url(images/pagemario.jpeg);
+    }
+
+}
+
+    
+h1{
+    font-family: mario;
+    font-size: 90px;
+    color: #40e25e;
+    margin: 50px;
+    padding: 20px;
+}
+
+
+.tortuga {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: tortuga 5s infinite;
+}
+
+@keyframes tortuga {
+    0%   {top: 0px; left: 0px; }
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 100px;}
+    75%  {top: 100px; left: 0px;}
+    100% {top: 0px; left: 0px;}
+}
+
+
+.mariocapa {
+    align-items: center;
+    margin: 0 auto;
+}
+.mariocapa {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: capa 5s infinite;
+    animation-delay: 2s;
+    z-index: 0;
+
+}
+.animacioncapa{
+    animation-delay: 6s;
+}
+
+
+@keyframes capa {
+    from {left: 0px;} 
+    to {left: 2000px;}  
+}
